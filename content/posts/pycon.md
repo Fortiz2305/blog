@@ -5,7 +5,7 @@ draft: true
 ---
 
 El pasado fin de semana (22-24 de Septiembre) asistí a la quinta edición de la conferencia
-PyConES. Personalmente, llevo trabajando con Python durante este último año por lo que, además
+PyConES. En mi caso, he empezado a trabajar con Python este último año por lo que, además
 de pasar un buen finde con algunos compañeros de [TheMotion](https://www.themotion.com/), era
 una buena oportunidad para seguir aprendiendo e ir conociendo a la comunidad.
 
@@ -25,32 +25,33 @@ puntos fuertes y otros más débiles sobre la organización del evento:
 ### Puntos débiles
 
    * La duración de las charlas (30 minutos con preguntas incluídas) me pareció demasiado
-   corta. En algunas de las charlas a las que asistí, la temática me parecía bastante interesante y creo que los _speakers_ tenían bastante que contar, pero creo que el tiempo era una limitación y no había demasiado tiempo para profundizar.
+   corta. En algunas de las charlas a las que asistí, la temática me parecía bastante
+   interesante y creo que los _speakers_ tenían bastante que contar, pero creo que el tiempo era
+   una limitación y no hubo demasiado tiempo para profundizar.
 
-   * Eché de menos algún punto donde poder hablar y compartir reflexiones de lo escuchado en
-   las charlas.
+   * Eché de menos algún punto en el edificio donde poder hablar y compartir reflexiones con
+   otros asistentes sobre lo escuchado en las charlas.
 
    * La conexión a Internet no fue demasiado buena.
 
 ## Charlas
 
-A continuación pongo mi opinión sobre algunas de las que me parecieron más interesantes:
+A continuación pongo mi opinión sobre algunas charlas a las que asistí:
 
 ### High-impact refactors while keeping the lights on
 
 A primera hora del sábado, [Kartones](https://twitter.com/kartones), ex-compañero en TheMotion,
 nos explicó algunos de los principios que están siguiendo en [Ticketea]
-(https://www.ticketea.com/) para ir evolucionando su plataforma mientras todo sigue en
-funcionamiento. La charla giró en torno a la nueva API de compras que están desarrollando,
+(https://www.ticketea.com/) para ir evolucionando su plataforma (mientras todo sigue en
+funcionamiento). La charla giró en torno a una nueva API que están desarrollando,
 pero lo más interesante para mí fueron algunos de los principios que se nombraron:
 
   * **Aporte de valor poco a poco**.
   * **Extender la plataforma actual en lugar de modificarla**
 
-    * Event Bus.
-    * Parallel changes.
+Además, resalto una frase que me gustó:
 
-  * **Build exciting things with boring technologies**
+  "_Build exciting things with boring technologies_"
 
 ### Metaclases: exactamente qué y (sobre todo) por qué
 
@@ -58,13 +59,13 @@ Personalmente, me pareció una de las charlas más interesantes de la conferenci
 un ejemplo de uso, fueron haciendo un recorrido a través de diferentes soluciones hasta
 llegar a la "necesidad" de utilizar metaclases. Se notó que llevaban bastante
 bien preparada la charla y tenían bien controlado el tiempo que debían emplear en cada parte
-para no pasarse de los 30 minutos, y todo fue explicado de una manera bastante clara y
+para no pasarse de los 30 minutos. Además, todo fue explicado de una manera bastante clara y
 divertida.
 
 ### Herramienta para lograr ser un experto en Python ES
 
 En esta charla el _speaker_ presentó una herramienta que analiza proyectos de los usuarios y
-detecta la utilización de "idioms" en el código. Personalmente, la herramienta me pareció
+detecta la utilización de "_idioms_" en el código. Personalmente, la herramienta me pareció
 interesante aunque no comparto algunos de los usos que la persona que la presentó dijo que
 tenía. Creo que una herramienta de este estilo es útil para aprender e ir
 escribiendo poco a poco un código más "idiomático". Sin embargo, no la utilizaría para medir
@@ -72,17 +73,16 @@ la calidad de un programador e incluso no estoy de acuerdo en que el código sea
 en todos los contextos. En mi humilde opinión, en esta calidad y mantenibilidad es mucho más
 importante la utilización de buenas prácticas: simplicidad, testing, etc.
 
-### Diccionarios, una mirada a fondo
-
-Al leer la agenda de la conferencia, esta charla era una de las que más interés me despertaba,
-ya que tenía curiosidad por seguir indagando en el comportamiento interno del lenguaje en
-algunos puntos y ver las mejoras que proporciona Python 3.6 sobre los diccionarios.
-Creo que el speaker tenía cosas interesantes que contar, pero al final me supo a poco, quizás
-debido al tiempo. Se empleó bastante tiempo en algunas definiciones básicas y al final no se
-pudieron explicar más en profundidad algunos conceptos más interesantes.
 
 ## Conclusiones
 
-En general, la experiencia estuvo bastante bien y sirvió para compartir el fin de semana con
-algunos compañeros y ex-compañeros en otro ambiente. Además, como siempre traigo nuevas ideas
-y cosas que investigar.
+En general, a pesar de algunos puntos que he mencionado arriba, la experiencia estuvo bastante
+bien y además sirvió para compartir el fin de semana con algunos compañeros y ex-compañeros en un
+ambiente distinto al habitual. Además, como siempre traigo nuevas ideas y cosas que investigar :)
+
+Adjunto una fotillo de parte del equipo de TheMotion durante el fin de semana.
+
+<img class="special-img-class" src="/pycon/pycon.png" />
+
+La siguiente será este fin de semana, ya que algunos integrantes del equipo estaremos presentes
+en la [Software Craftsmanship Barcelona 2017](http://scbcn.github.io/).
