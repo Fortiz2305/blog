@@ -81,7 +81,7 @@ ambiente distinto al habitual. Además, como siempre traigo nuevas ideas y cosas
 
 Adjunto una fotillo de parte del equipo de TheMotion durante el fin de semana.
 
-<img class="special-img-class" src="/pycon/pycon.png" />
+<img class="special-img-class" src="/blog/pycon/pycon.png" />
 
 La siguiente será este fin de semana, ya que algunos integrantes del equipo estaremos presentes
 en la [Software Craftsmanship Barcelona 2017](http://scbcn.github.io/).
