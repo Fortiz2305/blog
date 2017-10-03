@@ -1,7 +1,6 @@
 ---
 title: "PyConES 2017"
-date: 2017-10-01T13:29:57+02:00
-draft: true
+date: 2017-10-04T00:14:22+02:00
 ---
 
 El pasado fin de semana (22-24 de Septiembre) asistí a la quinta edición de la conferencia
