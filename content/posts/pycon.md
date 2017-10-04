@@ -4,7 +4,7 @@ date: 2017-10-04T00:14:22+02:00
 ---
 
 El pasado fin de semana (22-24 de Septiembre) asistí a la quinta edición de la conferencia
-PyConES. En mi caso, he empezado a trabajar con Python este último año por lo que, además
+[PyConES](https://2017.es.pycon.org/es/). En mi caso, he empezado a trabajar con Python este último año por lo que, además
 de pasar un buen finde con algunos compañeros de [TheMotion](https://www.themotion.com/), era
 una buena oportunidad para seguir aprendiendo e ir conociendo a la comunidad.
 
