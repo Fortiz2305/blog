@@ -2,6 +2,7 @@ baseURL = "http://blog.fortizabril.com"
 languageCode = "en-us"
 title = "Blog de Francisco Ortiz"
 theme = "gohugo-theme-ananke"
+googleAnalytics = "UA-107502336-1"
 
 [params]
   favicon = ""
