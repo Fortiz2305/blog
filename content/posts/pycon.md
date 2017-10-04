@@ -54,23 +54,28 @@ Además, resalto una frase que me gustó:
 
 ### Metaclases: exactamente qué y (sobre todo) por qué
 
-Personalmente, me pareció una de las charlas más interesantes de la conferencia. Partiendo de
-un ejemplo de uso, fueron haciendo un recorrido a través de diferentes soluciones hasta
-llegar a la "necesidad" de utilizar metaclases. Se notó que llevaban bastante
-bien preparada la charla y tenían bien controlado el tiempo que debían emplear en cada parte
-para no pasarse de los 30 minutos. Además, todo fue explicado de una manera bastante clara y
-divertida.
+Charla de Pablo Galindo Salgado y Víctor Terrón. Personalmente, me pareció una de las charlas
+más interesantes de la conferencia. Partiendo de un ejemplo de uso, fueron haciendo un recorrido
+a través de diferentes soluciones hasta llegar a la "necesidad" de utilizar metaclases. Se notó
+que llevaban bastante bien preparada la charla y tenían bien controlado el tiempo que debían
+emplear en cada parte para no pasarse de los 30 minutos. Además, todo fue explicado de una
+manera bastante clara y divertida.
+
+Si quieres saber más sobre metaclases, creo que también se explican
+bastante bien en este [post](https://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/)
 
 ### Herramienta para lograr ser un experto en Python ES
 
-En esta charla el _speaker_ presentó una herramienta que analiza proyectos de los usuarios y
-detecta la utilización de "_idioms_" en el código. Personalmente, la herramienta me pareció
-interesante aunque no comparto algunos de los usos que la persona que la presentó dijo que
-tenía. Creo que una herramienta de este estilo es útil para aprender e ir
+Esta charla fue de José Javier Merchante, donde presentó una herramienta que analiza proyectos
+de diferentes usuarios y detecta la utilización de "_idioms_" en el código. Personalmente, la
+herramienta me pareció interesante aunque no comparto algunos de los usos que la persona que la
+presentó dijo que tenía. Creo que una herramienta de este estilo es útil para aprender e ir
 escribiendo poco a poco un código más "idiomático". Sin embargo, no la utilizaría para medir
-la calidad de un programador e incluso no estoy de acuerdo en que el código sea más mantenible
-en todos los contextos. En mi humilde opinión, en esta calidad y mantenibilidad es mucho más
-importante la utilización de buenas prácticas: simplicidad, testing, etc.
+la calidad de un programador e incluso no estoy de acuerdo en que el código resultante sea más
+mantenible en todos los contextos (por no hablar de que escribir código no es la cualidad más
+importante que debe tener un buen programador, aunque discutir eso llevaría otro post :P). En mi
+humilde opinión, en esta calidad y mantenibilidad es mucho más importante la utilización de
+buenas prácticas: simplicidad, testing, etc.
 
 
 ## Conclusiones
@@ -79,7 +84,7 @@ En general, a pesar de algunos puntos que he mencionado arriba, la experiencia e
 bien y además sirvió para compartir el fin de semana con algunos compañeros y ex-compañeros en un
 ambiente distinto al habitual. Además, como siempre traigo nuevas ideas y cosas que investigar :)
 
-Adjunto una fotillo de parte del equipo de TheMotion durante el fin de semana.
+Adjunto una fotillo (robada a [Ronny](https://twitter.com/RonnyAncorini)) de parte del equipo de TheMotion durante el fin de semana.
 
 <img class="special-img-class" src="/pycon/pycon.png" />
 
