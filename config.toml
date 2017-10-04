@@ -1,4 +1,4 @@
-baseURL = "https://fortiz2305.github.io/blog/"
+baseURL = "http://blog.fortizabril.com"
 languageCode = "en-us"
 title = "Blog de Francisco Ortiz"
 theme = "gohugo-theme-ananke"
