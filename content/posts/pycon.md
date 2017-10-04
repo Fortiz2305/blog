@@ -8,7 +8,7 @@ El pasado fin de semana (22-24 de Septiembre) asistí a la quinta edición de la
 de pasar un buen finde con algunos compañeros de [TheMotion](https://www.themotion.com/), era
 una buena oportunidad para seguir aprendiendo e ir conociendo a la comunidad.
 
-Antes de comenzar a hablar de las charlas a las que asistí, me gustaría comentar algunos
+Antes de comenzar a hablar de las charlas en las que estuve, me gustaría comentar algunos
 puntos fuertes y otros más débiles sobre la organización del evento:
 
 ### Puntos fuertes
@@ -18,24 +18,21 @@ puntos fuertes y otros más débiles sobre la organización del evento:
    gente interesada en hacer de esa manera el viaje.
 
    * La elección del sitio para el evento me pareció adecuada, ya que no hubo problemas para
-   alojar a la gente durante las charlas y creo que no se quedó gente fuera en ninguna de
-   ellas.
+   alojar a la gente durante las diferentes sesiones y creo que no se quedó gente fuera en ninguna de ellas.
 
 ### Puntos débiles
 
    * La duración de las charlas (30 minutos con preguntas incluídas) me pareció demasiado
-   corta. En algunas de las charlas a las que asistí, la temática me parecía bastante
+   corta. En algunas de las que estuve, la temática me parecía bastante
    interesante y creo que los _speakers_ tenían bastante que contar, pero creo que el tiempo era
    una limitación y no hubo demasiado tiempo para profundizar.
 
    * Eché de menos algún punto en el edificio donde poder hablar y compartir reflexiones con
-   otros asistentes sobre lo escuchado en las charlas.
+   otros asistentes sobre lo escuchado.
 
    * La conexión a Internet no fue demasiado buena.
 
 ## Charlas
-
-A continuación pongo mi opinión sobre algunas charlas a las que asistí:
 
 ### High-impact refactors while keeping the lights on
 
@@ -54,10 +51,10 @@ Además, resalto una frase que me gustó:
 
 ### Metaclases: exactamente qué y (sobre todo) por qué
 
-Charla de Pablo Galindo Salgado y Víctor Terrón. Personalmente, me pareció una de las charlas
+Pablo Galindo Salgado y Víctor Terrón. Personalmente, me pareció una de las charlas
 más interesantes de la conferencia. Partiendo de un ejemplo de uso, fueron haciendo un recorrido
 a través de diferentes soluciones hasta llegar a la "necesidad" de utilizar metaclases. Se notó
-que llevaban bastante bien preparada la charla y tenían bien controlado el tiempo que debían
+que llevaban bastante bien preparada la sesión y tenían bien controlado el tiempo que debían
 emplear en cada parte para no pasarse de los 30 minutos. Además, todo fue explicado de una
 manera bastante clara y divertida.
 
