@@ -10,5 +10,14 @@
 	<atom:link href="http://blog.fortizabril.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Talks</title>
+      <link>http://blog.fortizabril.com/categories/talks/</link>
+      <pubDate>Wed, 04 Oct 2017 00:14:22 +0200</pubDate>
+      
+      <guid>http://blog.fortizabril.com/categories/talks/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

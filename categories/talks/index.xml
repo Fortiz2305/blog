@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Blog de Francisco Ortiz</title>
+    <link>http://blog.fortizabril.com/categories/talks/</link>
+    <description>Recent content in Talks on Blog de Francisco Ortiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Oct 2017 00:14:22 +0200</lastBuildDate>
+    
+	<atom:link href="http://blog.fortizabril.com/categories/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyConES 2017</title>
+      <link>http://blog.fortizabril.com/posts/pycon/</link>
+      <pubDate>Wed, 04 Oct 2017 00:14:22 +0200</pubDate>
+      
+      <guid>http://blog.fortizabril.com/posts/pycon/</guid>
+      <description>El pasado fin de semana (22-24 de Septiembre) asistí a la quinta edición de la conferencia PyConES. En mi caso, he empezado a trabajar con Python este último año por lo que, además de pasar un buen finde con algunos compañeros de TheMotion, era una buena oportunidad para seguir aprendiendo e ir conociendo a la comunidad.
+Antes de comenzar a hablar de las charlas en las que estuve, me gustaría comentar algunos puntos fuertes y otros más débiles sobre la organización del evento:</description>
+    </item>
+    
+  </channel>
+</rss>
