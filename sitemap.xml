@@ -13,30 +13,18 @@
   </url>
   
   <url>
-    <loc>http://blog.fortizabril.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.fortizabril.com/posts/</loc>
     <lastmod>2017-10-04T00:14:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog.fortizabril.com/tags/pycon/</loc>
-    <lastmod>2017-10-04T00:14:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.fortizabril.com/tags/</loc>
-    <lastmod>2017-10-04T00:14:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://blog.fortizabril.com/categories/talks/</loc>
+    <loc>http://blog.fortizabril.com/tags/talks/</loc>
     <lastmod>2017-10-04T00:14:22+02:00</lastmod>
     <priority>0</priority>
   </url>
