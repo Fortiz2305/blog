@@ -1,7 +1,6 @@
 ---
 title: "DDD: Identificando Bounded Contexts"
-date: 2017-10-06T17:05:50+02:00
-draft: true
+date: 2017-10-08T23:03:17+02:00
 tags: ["DDD"]
 ---
 
