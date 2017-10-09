@@ -14,7 +14,7 @@ Cuando empiezas a programar cualquier plataforma tienes que resolver un problema
 lo que el primer paso es modelarlo.
 Si este problema de negocio es bastante grande y complejo, puede ser interesante utilizar DDD para este
 proceso de modelado. DDD aborda este problema de modelado dividiendo el problema principal
-(**Dominio**) en diferentes problemas más pequeñas (**Subdominios**). En el ámbito de la solución,
+(**Dominio**) en diferentes problemas más pequeños (**Subdominios**). En el ámbito de la solución,
 el equivalente a estos subdominios es a lo que se llama **Bounded Contexts**, mientras que el
 equivalente al Dominio sería el **Modelo de Dominio**.
 
@@ -35,10 +35,8 @@ otra definición de Bounded Context:
 
 **"_Un Bounded Context es un espacio delimitado donde un elemento del negocio tiene un significado perfectamente definido_"**
 
-Es decir, es un espacio donde
-hemos encontrado un lenguaje ubicuo. Veámos el significado de
-esta afirmación con un ejemplo:
-
+Es decir, es un espacio donde existe un lenguaje ubicuo. Veámos el significado de
+esta afirmación con un ejemplo.
 
 Existe una plataforma donde un usuario puede registrar actividades
 deportivas o unirse a algunas previamente existentes. A su vez, puede abonar los costes de estas
