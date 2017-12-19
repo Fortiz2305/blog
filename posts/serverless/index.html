@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Blog de Francisco Ortiz  | DDD: Identificando Bounded Contexts</title>
+    <title>Blog de Francisco Ortiz  | Serverless Architectures</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -22,19 +22,16 @@
 
     
 
-    <meta property="og:title" content="DDD: Identificando Bounded Contexts" />
-<meta property="og:description" content="Durante los últimos meses he estado reflexionando bastante sobre DDD (Domain Driven Design) con algunos compañeros de trabajo. No soy ni mucho menos un experto en este tema, pero me gustaría hacer algunos posts sobre cómo he ido asimilando varios de los conceptos más importantes, ya que con el tiempo ha ido cambiando mi manera de ver algunos de ellos. En este primer post me gustaría empezar por los Bounded Contexts." />
+    <meta property="og:title" content="Serverless Architectures" />
+<meta property="og:description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think that, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
+ Try to help and get feedback to/from people reading this article. As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P  Why Serverless?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.fortizabril.com/posts/bounded-contexts/" />
+<meta property="og:url" content="http://blog.fortizabril.com/posts/serverless/" />
 
 
 
-<meta property="article:published_time" content="2017-10-08T23:03:17&#43;02:00"/>
-<meta property="article:modified_time" content="2017-10-08T23:03:17&#43;02:00"/>
-
-
-
-
+<meta property="article:published_time" content="2017-12-19T14:45:05&#43;01:00"/>
+<meta property="article:modified_time" content="2017-12-19T14:45:05&#43;01:00"/>
 
 
 
@@ -42,31 +39,28 @@
 
 
 
-<meta itemprop="name" content="DDD: Identificando Bounded Contexts">
-<meta itemprop="description" content="Durante los últimos meses he estado reflexionando bastante sobre DDD (Domain Driven Design) con algunos compañeros de trabajo. No soy ni mucho menos un experto en este tema, pero me gustaría hacer algunos posts sobre cómo he ido asimilando varios de los conceptos más importantes, ya que con el tiempo ha ido cambiando mi manera de ver algunos de ellos. En este primer post me gustaría empezar por los Bounded Contexts.">
-
-
-<meta itemprop="dateModified" content="2017-10-08T23:03:17&#43;02:00" />
-<meta itemprop="wordCount" content="869">
 
 
 
-<meta itemprop="keywords" content="DDD," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="DDD: Identificando Bounded Contexts"/>
-<meta name="twitter:description" content="Durante los últimos meses he estado reflexionando bastante sobre DDD (Domain Driven Design) con algunos compañeros de trabajo. No soy ni mucho menos un experto en este tema, pero me gustaría hacer algunos posts sobre cómo he ido asimilando varios de los conceptos más importantes, ya que con el tiempo ha ido cambiando mi manera de ver algunos de ellos. En este primer post me gustaría empezar por los Bounded Contexts."/>
 
-      
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-107502336-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<meta itemprop="name" content="Serverless Architectures">
+<meta itemprop="description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think that, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
+ Try to help and get feedback to/from people reading this article. As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P  Why Serverless?">
 
-    
+
+<meta itemprop="dateModified" content="2017-12-19T14:45:05&#43;01:00" />
+<meta itemprop="wordCount" content="785">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Serverless Architectures"/>
+<meta name="twitter:description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think that, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
+ Try to help and get feedback to/from people reading this article. As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P  Why Serverless?"/>
+
   </head>
 
-  <body class="ma0 avenir bg-near-white production">
+  <body class="ma0 avenir bg-near-white">
 
     
 
@@ -123,95 +117,70 @@ ga('send', 'pageview');
           POSTS
         </p>
         <h1 class="f1">
-          DDD: Identificando Bounded Contexts
+          Serverless Architectures
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
         
 
-<p>Durante los últimos meses he estado reflexionando bastante sobre <strong>DDD</strong> (<em>Domain Driven Design</em>)
-con algunos compañeros de trabajo. No soy ni mucho menos un experto en este tema, pero me
-gustaría hacer algunos posts sobre cómo he ido asimilando varios de los conceptos más
-importantes, ya que con el tiempo ha ido cambiando mi manera de ver algunos de ellos. En este
-primer post me gustaría empezar por los <strong>Bounded Contexts</strong>.</p>
-
-<p>Cuando empiezas a programar cualquier plataforma tienes que resolver un problema de negocio, por
-lo que el primer paso es modelarlo.
-Si este problema de negocio es bastante grande y complejo, puede ser interesante utilizar DDD para este
-proceso de modelado. DDD aborda este problema de modelado dividiendo el problema principal
-(<strong>Dominio</strong>) en diferentes problemas más pequeños (<strong>Subdominios</strong>). En el ámbito de la solución,
-el equivalente a estos subdominios es a lo que se llama <strong>Bounded Contexts</strong>, mientras que el
-equivalente al Dominio sería el <strong>Modelo de Dominio</strong>.</p>
-
-<h3 id="y-cómo-identificar-los-diferentes-bounded-contexts-en-mi-modelo-de-dominio">Y&hellip; ¿Cómo identificar los diferentes Bounded Contexts en mi Modelo de Dominio?</h3>
-
-<p>La primera vez que me puse a estudiar este concepto me pareció entender bien su definición, y me
-hacía una idea de lo que significaba un Bounded Context dentro de un Modelo de Dominio. Pero
-me hacía siempre la misma pregunta: si estoy construyendo una aplicación y hago uso de
-DDD para su modelado&hellip;¿Qué estrategia puedo seguir para ayudarme a identificar mis diferentes
-Bounded Contexts? ¿Debo confiar en tener momentos de inspiración para ayudarme a dividir mi
-problema en problemas más pequeños? :) Estaba claro que no, y fue aquí cuando entró en juego
-para mí otro concepto importante de DDD: el <strong>Lenguaje Ubicuo</strong>.</p>
-
-<p>En DDD, la motivación del Lenguaje Ubicuo es encontrar un lenguaje donde conceptos relacionados con
-el negocio signifiquen lo mismo y se llamen igual para todas las partes implicadas: gente de
-business, diferentes equipos de desarrollo, e incluso dentro del propio código. A partir de ahí, sale
-otra definición de Bounded Context:</p>
-
-<p><strong>&ldquo;<em>Un Bounded Context es un espacio delimitado donde un elemento del negocio tiene un significado perfectamente definido</em>&ldquo;</strong></p>
-
-<p>Es decir, es un espacio donde existe un lenguaje ubicuo. Veámos el significado de
-esta afirmación con un ejemplo.</p>
-
-<p>Existe una plataforma donde un usuario puede registrar actividades
-deportivas o unirse a algunas previamente existentes. A su vez, puede abonar los costes de estas
-actividades en la misma plataforma, por lo que harán falta una serie de datos:</p>
-
-<p><img class="special-img-class" src="/images/bounded-context/1st.png" /></p>
-
-<p>Fijándonos en el concepto de Usuario, en algunas partes de
-la plataforma un usuario va a estar perfectamente definido a partir de su nombre o su email,
-como en la parte donde se crea una actividad o te puedes unir a una existente. Sin embargo, la
-definición de usuario incluye una tarjeta de crédito si estamos hablando de abonar el coste de una actividad.</p>
-
-<p>Hacen falta estos tres datos en nuestro modelo, pero en la parte de la aplicación donde se gestionan
-las actividades, ¿entra la tarjeta de crédito en la definición de usuario? No, por lo que si tenemos
-estas dos operaciones juntas, no estamos logrando tener un lenguaje ubicuo. Para lograrlo,
-se va a dividir nuestro modelo en dos Bounded Contexts, donde cada uno tendrá una
-implementación y una definición diferente de Usuario.</p>
+<p>In the last few months, one of my main topics to learn about has been Serverless. After this time
+I think that, like some other trends in software, there is still confusion about what Serverless is, so
+I would like to share my reflexions about it to:</p>
 
 <ul>
-<li><strong>Contexto de Gestión de Actividades</strong></li>
-<li><strong>Contexto de Billing</strong></li>
+<li>Try to help and get feedback to/from people reading this article.</li>
+<li>As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P</li>
 </ul>
 
-<p>Así, se logra que todas las partes implicadas en el proyecto hablen lo mismo dentro de cada contexto.</p>
+<h3 id="why-serverless">Why Serverless?</h3>
 
-<p><img class="special-img-class" src="/images/bounded-context/2nd.png" /></p>
+<p>Before discussing what Serverless is, I think it is important to mention <strong>what people who use serverless are willing to achieve</strong>.</p>
 
-<p>En este punto, a través del lenguaje ubicuo hemos encontrado una estrategia para identificar
-diferentes Bounded Contexts dentro de nuestra aplicación, y lo hemos hecho teniendo en cuenta
-los atributos que tiene un determinado concepto en las diferentes partes de la misma
-(el concepto Usuario en nuestro ejemplo).</p>
+<ul>
+<li><p><strong>Reduce operational burden</strong>: Serverless removes a lot of operational burdens from your team. You do not have to manage operating systems or running low level infrastructure. Instead, you are using a third party service to do it.</p></li>
 
-<p>Algunos días más tarde, después de una pequeña charla con <a href="https://twitter.com/ronnyancorini">Ronny</a> me
-cambió un poco el <em>chip</em> en cuanto a las propiedades de un concepto que se deben tener en cuenta para
-filtrar. Como acabo de mencionar, en el ejemplo de arriba se ha conseguido tener un lenguaje
-ubicuo teniendo en cuenta los atributos relevantes de un Usuario en cada parte de la aplicación, y se han identificado
-dos Bounded Contexts a partir de ahí. Pero&hellip;¿queremos modelar nuestra clase Usuario teniendo en cuenta solamente atributos? Este enfoque nos puede llevar a un
-anti-patrón de DDD: <a href="https://www.martinfowler.com/bliki/AnemicDomainModel.html">un modelo anémico</a>.</p>
+<li><p><strong>Time to market</strong>: In my opinion, this is one of the most important benefits of using serverless. The entire time from a new idea to the initial deployment of a elastic platform with metrics, automatic scaling and costs control can be very short and with a low risk and cost.</p></li>
 
-<p>Para evitar esto, en lugar de tener en cuenta los atributos que tiene un concepto dentro de una
-parte de nuestro negocio, es mejor tener en cuenta qué operaciones de negocio se llevan a cabo
-en cada parte. Por tanto, en nuestro ejemplo, habrá un Bounded Context donde se hagan
-operaciones como crear una actividad o unirse a ella (y se necesitarán un nombre o un email como
-atributo) y otro contexto donde se harán operaciones como validación de datos de facturación (y
-se necesitará una tarjeta de crédito como atributo). Teniendo en cuenta estas operaciones, creo que es
-mejor manera de construir nuestro lenguaje y hacer esta separación.</p>
+<li><p><strong>Cost</strong>: A resource is only running when it is necessary so the correspondence between billed and used is very high.</p></li>
+</ul>
 
-<p>En resumen, como podéis ver, a lo largo de este tiempo he ido evolucionando la visión que tenía de este concepto.
-Seguramente esto seguirá pasando y me iré dando cuenta de otros detalles que ahora mismo se me
-escapan o he interpretado mal. Por tanto, cualquier feedback es muy bienvenido!! :)</p>
+<h3 id="what-is-serverless">What is Serverless?</h3>
+
+<p>Before going deeper into this topic, almost all the times that I heard something about Serverless it was related to AWS Lambda, but <strong>Serverless is not just AWS Lambda</strong>. AWS Lambda, like other services such as Azure Functions or Google Cloud Functions, is an implementation of Function as a Service (FaaS). FaaS is an important component within the Serverless architecture, where you put your code. But the most important change that is accelerating the adoption of Serverless is the power of the ecosystem of services in each public cloud. Without this ecosystem (services like SQS, API Gateway, S3, DynamoDB, Kinesis, etc), AWS Lambda would not have gained as much adoption as it did in this short period of time.</p>
+
+<p>So, <strong>when an application is Serverless?</strong></p>
+
+<p>For an application to be Serverless, it needs to move towards these directions:</p>
+
+<ul>
+<li><p><strong>Event-triggered</strong>: the code that you put in FaaS services like AWS Lambda is triggered by events. For instance, in AWS you can choose between different triggers like include a file in S3, add a message to a bus (Kinesis), schedule a periodic task, etc.</p></li>
+
+<li><p><strong>Fully managed by a third party</strong>: as an application is increasingly going to Serverless, it relies more on external services to be able to provide the features of the system. For instance, you have to use services like DynamoDB if you want to persist data, services like Kinesis or S3 as we pointed above, etc.</p></li>
+
+<li><p><strong>Epheremeral compute</strong>: this is a continuation of the ideas exposed by <a href="https://12factor.net/">The Twelve-Factor App</a>, where we see guidelines like <em>Twelve-factor processes are stateless and share-nothing. Any data that needs to persist must be stored in a stateful backing service, typically a database</em> and <a href="https://blog.codeship.com/immutable-infrastructure/">Immutable Infrastructure</a>. Serverless goes beyond that, so <strong>the infrastructure should not even exist when it is not handling data</strong></p></li>
+</ul>
+
+<p>As we have seen, the infrastructure in Serverless applications does not exist when there is no data to handle (<em><strong>A persistent computing resource is a server no matter what form that resource takes</strong></em>). When data is available (there is an event that trigger our application), all the components have to be running with a low latency in order to give a proper response. Here, we have a proof of the power of this ecosystem.</p>
+
+<h3 id="downsides">Downsides</h3>
+
+<p>We have seen some reasons to go Serverless and we explained the main concepts behind this architecture. Now, we are going to mention some trade-offs.</p>
+
+<ul>
+<li><p><strong>Cloud Provider lock-in</strong>: as we have said above, when your application go to Serverless, it relies on many external services. Usually you use a service to get a specific feature. Sometimes, that feature is better implemented in a service from another cloud provider, and maybe you want to jump to it. This has a cost, because you will have to update some things. In order to reduce this problem, there are frameworks like <a href="https://serverless.com/">Serverless</a> which offer a general abstraction of multiple providers.</p></li>
+
+<li><p><strong>Magic</strong>: with a few lines of code, you can have a platform with continuos deployment and automatic scaling. If you use frameworks like <a href="https://serverless.com/">Serverless</a>, you will be able to deploy that infrastructure with a single command in different providers. This sounds very good, but you have to understand what there is under this magic. Otherwise, you will lose the control of your platform and this can be very dangerous when the platform is increasingly growing.</p></li>
+</ul>
+
+<h4 id="references">References</h4>
+
+<ul>
+<li><p><a href="https://m.subbu.org/serverless-looking-back-to-see-forward-74dd1a02cb62">Serverless: Looking Back to see Forward</a></p></li>
+
+<li><p><a href="https://read.acloud.guru/the-serverless-spectrum-147b02cb2292">The Serverless Spectrum</a></p></li>
+
+<li><p><a href="https://read.acloud.guru/debunking-serverless-myths-cc329460d061">Debunking Serverless Myths</a></p></li>
+</ul>
 
       </div>
     </article>
@@ -232,14 +201,14 @@ escapan o he interpretado mal. Por tanto, cualquier feedback es muy bienvenido!!
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/posts/serverless/" class="link ph2 pv2 db black">
+          <a href="/posts/serverless/" class="link ph2 pv2 db black o-50">
             Serverless Architectures
           </a>
         </li>
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/posts/bounded-contexts/" class="link ph2 pv2 db black o-50">
+          <a href="/posts/bounded-contexts/" class="link ph2 pv2 db black">
             DDD: Identificando Bounded Contexts
           </a>
         </li>

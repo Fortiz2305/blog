@@ -6,10 +6,20 @@
     <description>Recent content on Blog de Francisco Ortiz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Oct 2017 23:03:17 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 19 Dec 2017 14:45:05 +0100</lastBuildDate>
     
 	<atom:link href="http://blog.fortizabril.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serverless Architectures</title>
+      <link>http://blog.fortizabril.com/posts/serverless/</link>
+      <pubDate>Tue, 19 Dec 2017 14:45:05 +0100</pubDate>
+      
+      <guid>http://blog.fortizabril.com/posts/serverless/</guid>
+      <description>In the last few months, one of my main topics to learn about has been Serverless. After this time I think that, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
+ Try to help and get feedback to/from people reading this article. As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P  Why Serverless?</description>
+    </item>
     
     <item>
       <title>DDD: Identificando Bounded Contexts</title>
