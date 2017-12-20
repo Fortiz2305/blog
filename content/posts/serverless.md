@@ -4,7 +4,7 @@ date: 2017-12-19T14:45:05+01:00
 ---
 
 In the last few months, one of my main topics to learn about has been Serverless. After this time
-I think that, like some other trends in software, there is still confusion about what Serverless is, so
+I think, like some other trends in software, there is still confusion about what Serverless is, so
 I would like to share my reflexions about it to:
 
 * Try to help and get feedback to/from people reading this article.
@@ -22,7 +22,7 @@ Before discussing what Serverless is, I think it is important to mention **what 
 
 ### What is Serverless?
 
-Before going deeper into this topic, almost all the times that I heard something about Serverless it was related to AWS Lambda, but **Serverless is not just AWS Lambda**. AWS Lambda, like other services such as Azure Functions or Google Cloud Functions, is an implementation of Function as a Service (FaaS). FaaS is an important component within the Serverless architecture, where you put your code. But the most important change that is accelerating the adoption of Serverless is the power of the ecosystem of services in each public cloud. Without this ecosystem (services like SQS, API Gateway, S3, DynamoDB, Kinesis, etc), AWS Lambda would not have gained as much adoption as it did in this short period of time.
+Before going deeper into this topic, almost all the times I heard something about Serverless it was related to AWS Lambda, but **Serverless is not just AWS Lambda**. AWS Lambda, like other services such as Azure Functions or Google Cloud Functions, is an implementation of Function as a Service (FaaS). FaaS is an important component within the Serverless architecture, where you put your code. But the most important change that is accelerating the adoption of Serverless is the power of the ecosystem of services in each public cloud. Without this ecosystem (services like SQS, API Gateway, S3, DynamoDB, Kinesis, etc), AWS Lambda would not have gained as much adoption as it did in this short period of time.
 
 So, **when an application is Serverless?**
 
