@@ -12,7 +12,7 @@
     <meta name="generator" content="Hugo 0.29" />
     
     
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     
 
     <link href='http://blog.fortizabril.com/dist/main.css' rel='stylesheet' type="text/css" />
@@ -23,7 +23,7 @@
     
 
     <meta property="og:title" content="Serverless Architectures" />
-<meta property="og:description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think that, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
+<meta property="og:description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
  Try to help and get feedback to/from people reading this article. As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P  Why Serverless?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://blog.fortizabril.com/posts/serverless/" />
@@ -44,23 +44,32 @@
 
 
 <meta itemprop="name" content="Serverless Architectures">
-<meta itemprop="description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think that, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
+<meta itemprop="description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
  Try to help and get feedback to/from people reading this article. As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P  Why Serverless?">
 
 
 <meta itemprop="dateModified" content="2017-12-19T14:45:05&#43;01:00" />
-<meta itemprop="wordCount" content="785">
+<meta itemprop="wordCount" content="783">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Serverless Architectures"/>
-<meta name="twitter:description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think that, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
+<meta name="twitter:description" content="In the last few months, one of my main topics to learn about has been Serverless. After this time I think, like some other trends in software, there is still confusion about what Serverless is, so I would like to share my reflexions about it to:
  Try to help and get feedback to/from people reading this article. As probably I have not fully understood some concepts yet, I will come back here periodically in order to see my progress understanding it :P  Why Serverless?"/>
 
+      
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-107502336-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+    
   </head>
 
-  <body class="ma0 avenir bg-near-white">
+  <body class="ma0 avenir bg-near-white production">
 
     
 
@@ -124,7 +133,7 @@
         
 
 <p>In the last few months, one of my main topics to learn about has been Serverless. After this time
-I think that, like some other trends in software, there is still confusion about what Serverless is, so
+I think, like some other trends in software, there is still confusion about what Serverless is, so
 I would like to share my reflexions about it to:</p>
 
 <ul>
@@ -146,7 +155,7 @@ I would like to share my reflexions about it to:</p>
 
 <h3 id="what-is-serverless">What is Serverless?</h3>
 
-<p>Before going deeper into this topic, almost all the times that I heard something about Serverless it was related to AWS Lambda, but <strong>Serverless is not just AWS Lambda</strong>. AWS Lambda, like other services such as Azure Functions or Google Cloud Functions, is an implementation of Function as a Service (FaaS). FaaS is an important component within the Serverless architecture, where you put your code. But the most important change that is accelerating the adoption of Serverless is the power of the ecosystem of services in each public cloud. Without this ecosystem (services like SQS, API Gateway, S3, DynamoDB, Kinesis, etc), AWS Lambda would not have gained as much adoption as it did in this short period of time.</p>
+<p>Before going deeper into this topic, almost all the times I heard something about Serverless it was related to AWS Lambda, but <strong>Serverless is not just AWS Lambda</strong>. AWS Lambda, like other services such as Azure Functions or Google Cloud Functions, is an implementation of Function as a Service (FaaS). FaaS is an important component within the Serverless architecture, where you put your code. But the most important change that is accelerating the adoption of Serverless is the power of the ecosystem of services in each public cloud. Without this ecosystem (services like SQS, API Gateway, S3, DynamoDB, Kinesis, etc), AWS Lambda would not have gained as much adoption as it did in this short period of time.</p>
 
 <p>So, <strong>when an application is Serverless?</strong></p>
 
