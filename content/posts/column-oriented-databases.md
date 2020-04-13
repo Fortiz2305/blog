@@ -14,17 +14,17 @@ In many companies, it's common to see some data pipelines that extract informati
 
 In a database, data is stored and retrieved from disk, which is organized in units called *disk blocks*.
 
-<img src="/images/columnar-databases/database-disk.png"/>
+<img src="/images/column-oriented-databases/database-disk.png"/>
 
 **The main difference between row-oriented and column-oriented databases is in the way they store data on the disk**. Row-oriented solutions store the whole row in the same disk block, while columnar databases stores data by column, rather than by row. So, in column-oriented databases each disk block has values of a single column for multiple rows.
 
 Let's see it with an example. Consider we have the database table below, with three records and three columns (name, age and occupation).
 
-<img src="/images/columnar-databases/database-table.png" />
+<img src="/images/column-oriented-databases/database-table.png" />
 
 The picture below shows how records are stored into disk blocks when using a row-oriented database.
 
-<img src="/images/columnar-databases/row-database.png" />
+<img src="/images/column-oriented-databases/row-database.png" />
 
 We can see that the first disk block contains all the table columns for Lisa, the person in the first row. Then, the second blocks contains all the columns for the second row, etc. So, in this solution, **each disk block contains all the column values until complete the entire row**. Some examples of row-oriented databases:
 
@@ -34,7 +34,7 @@ We can see that the first disk block contains all the table columns for Lisa, th
 
 Let's look at the same scenario in a column-oriented database:
 
-<img src="/images/columnar-databases/column-database.png" />
+<img src="/images/column-oriented-databases/column-database.png" />
 
 In this case, the values for each column are stored sequentially into disk blocks. The first block contains the *Name* information for the three rows, the second one contains all the *Age* information, etc. So, **when using a columnar database, each disk block contains values of a single column for multiple rows**. Some examples of column-oriented databases:
 
@@ -63,11 +63,11 @@ SELECT AVG(Age) FROM table_name
 
 When we execute that query, databases read data from storage block by block. So, in a row-oriented solution, as we can see in the picture below, we have to read all three blocks from disk to get the ages of the people in our database, as each block contains a single row.
 
-<img src="/images/columnar-databases/row-oriented-block.png" />
+<img src="/images/column-oriented-databases/row-oriented-block.png" />
 
 If we execute the same query in a column-oriented database, **we now have to read one block from disk**, as all the ages are in the same block.
 
-<img src="/images/columnar-databases/column-oriented-block.png" />
+<img src="/images/column-oriented-databases/column-oriented-block.png" />
 
 This is a simple example, we cannot show a huge performance difference between the different solutions but, as the number of rows and columns increase, the amount of data to be read from disk can be significantly smaller in the column-oriented solution. Also, as columnar databases keep homogenous data in a single block, they can apply strategies to compress the data in that block. This is also an important point when you have huge volumes of data.
 
