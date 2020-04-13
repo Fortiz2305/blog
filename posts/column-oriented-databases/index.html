@@ -173,7 +173,7 @@ In many companies, it&rsquo;s common to see some data pipelines that extract inf
 
 <ul>
 <li>What is a column-oriented database? how they differ from row-oriented databases?</li>
-<li>Why are they faster for analytical queries? Are they a silver bullet for all use cases?</li>
+<li>Why are they faster for analytical queries? Are they the best solution for all use cases?</li>
 </ul>
 
 <h3 id="row-oriented-vs-column-oriented-databases">Row-oriented vs. Column-oriented databases</h3>
@@ -182,7 +182,7 @@ In many companies, it&rsquo;s common to see some data pipelines that extract inf
 
 <p><img src="/images/columnar-databases/database-disk.png"/></p>
 
-<p><strong>The main difference between row-oriented and column-oriented databases is in the way they store data on the disk</strong>. Row-oriented solutions store the whole row in the same disk block, while columnar databases stores data by column, rather than my row. So, in column-oriented databases each disk block has values of a single column for multiple rows.</p>
+<p><strong>The main difference between row-oriented and column-oriented databases is in the way they store data on the disk</strong>. Row-oriented solutions store the whole row in the same disk block, while columnar databases stores data by column, rather than by row. So, in column-oriented databases each disk block has values of a single column for multiple rows.</p>
 
 <p>Let&rsquo;s see it with an example. Consider we have the database table below, with three records and three columns (name, age and occupation).</p>
 
