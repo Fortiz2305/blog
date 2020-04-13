@@ -13,10 +13,10 @@
     
     <item>
       <title>Column-oriented Databases</title>
-      <link>http://blog.fortizabril.com/posts/columnar-databases/</link>
+      <link>http://blog.fortizabril.com/posts/column-oriented-databases/</link>
       <pubDate>Sun, 12 Apr 2020 19:00:05 +0200</pubDate>
       
-      <guid>http://blog.fortizabril.com/posts/columnar-databases/</guid>
+      <guid>http://blog.fortizabril.com/posts/column-oriented-databases/</guid>
       <description>Columnar, or column-oriented, databases are becoming more and more popular in analytical query systems such as Business Intelligence (BI) modules. In many companies, it&amp;rsquo;s common to see some data pipelines that extract information from several data sources, make some transformations to that data and then store it to these columnar databases. Then, we execute some analytical queries and they respond faster than traditional row-oriented ones. But:
  What is a column-oriented database?</description>
     </item>
