@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Fran Ortiz&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Dec 2017 14:45:05 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 19:00:05 +0200</lastBuildDate>
     
 	<atom:link href="http://blog.fortizabril.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Column-oriented Databases</title>
+      <link>http://blog.fortizabril.com/posts/columnar-databases/</link>
+      <pubDate>Sun, 12 Apr 2020 19:00:05 +0200</pubDate>
+      
+      <guid>http://blog.fortizabril.com/posts/columnar-databases/</guid>
+      <description>Columnar, or column-oriented, databases are becoming more and more popular in analytical query systems such as Business Intelligence (BI) modules. In many companies, it&amp;rsquo;s common to see some data pipelines that extract information from several data sources, make some transformations to that data and then store it to these columnar databases. Then, we execute some analytical queries and they respond faster than traditional row-oriented ones. But:
+ What is a column-oriented database?</description>
+    </item>
     
     <item>
       <title>Serverless Architectures</title>

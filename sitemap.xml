@@ -3,13 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.fortizabril.com/posts/columnar-databases/</loc>
+    <lastmod>2020-04-12T19:00:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fortizabril.com/tags/databases/</loc>
+    <lastmod>2020-04-12T19:00:05+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.fortizabril.com/</loc>
-    <lastmod>2017-12-19T14:45:05+01:00</lastmod>
+    <lastmod>2020-04-12T19:00:05+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.fortizabril.com/posts/</loc>
-    <lastmod>2017-12-19T14:45:05+01:00</lastmod>
+    <lastmod>2020-04-12T19:00:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fortizabril.com/tags/</loc>
+    <lastmod>2020-04-12T19:00:05+02:00</lastmod>
   </url>
   
   <url>
@@ -24,11 +39,6 @@
   
   <url>
     <loc>http://blog.fortizabril.com/posts/bounded-contexts/</loc>
-    <lastmod>2017-10-08T23:03:17+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.fortizabril.com/tags/</loc>
     <lastmod>2017-10-08T23:03:17+02:00</lastmod>
   </url>
   
