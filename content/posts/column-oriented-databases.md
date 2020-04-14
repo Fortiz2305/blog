@@ -28,9 +28,8 @@ The picture below shows how records are stored into disk blocks when using a row
 
 We can see that the first disk block contains all the table columns for Lisa, the person in the first row. Then, the second blocks contains all the columns for the second row, etc. So, in this solution, **each disk block contains all the column values until complete the entire row**. Some examples of row-oriented databases:
 
-  * MySQL
-  * PostgreSQL
-  * Amazon Aurora
+  * MySQL / MariaDB / Aurora RDS MySQL / Google Cloud SQL
+  * PostgreSQL / Aurora RDS PostgreSQL / Google Cloud SQL
 
 Let's look at the same scenario in a column-oriented database:
 
@@ -40,6 +39,9 @@ In this case, the values for each column are stored sequentially into disk block
 
   * Amazon Redshift
   * Google BigQuery
+  * Apache Druid
+  * Vertica
+  * ClickHouse
 
 
 ### Why are columnar databases so popular for business intelligence (BI) applications?
