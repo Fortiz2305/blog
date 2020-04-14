@@ -39,7 +39,7 @@
 
 <meta itemprop="datePublished" content="2020-04-12T19:00:05&#43;02:00" />
 <meta itemprop="dateModified" content="2020-04-12T19:00:05&#43;02:00" />
-<meta itemprop="wordCount" content="853">
+<meta itemprop="wordCount" content="873">
 
 
 
@@ -195,9 +195,8 @@ In many companies, it&rsquo;s common to see some data pipelines that extract inf
 <p>We can see that the first disk block contains all the table columns for Lisa, the person in the first row. Then, the second blocks contains all the columns for the second row, etc. So, in this solution, <strong>each disk block contains all the column values until complete the entire row</strong>. Some examples of row-oriented databases:</p>
 
 <ul>
-<li>MySQL</li>
-<li>PostgreSQL</li>
-<li>Amazon Aurora</li>
+<li>MySQL / MariaDB / Aurora RDS MySQL / Google Cloud SQL</li>
+<li>PostgreSQL / Aurora RDS PostgreSQL / Google Cloud SQL</li>
 </ul>
 
 <p>Let&rsquo;s look at the same scenario in a column-oriented database:</p>
@@ -209,6 +208,9 @@ In many companies, it&rsquo;s common to see some data pipelines that extract inf
 <ul>
 <li>Amazon Redshift</li>
 <li>Google BigQuery</li>
+<li>Apache Druid</li>
+<li>Vertica</li>
+<li>ClickHouse</li>
 </ul>
 
 <h3 id="why-are-columnar-databases-so-popular-for-business-intelligence-bi-applications">Why are columnar databases so popular for business intelligence (BI) applications?</h3>
